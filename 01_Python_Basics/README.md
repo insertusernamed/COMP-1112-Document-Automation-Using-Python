@@ -40,3 +40,7 @@ To run the example, navigate to this directory in your terminal and execute the 
 ```
 python basic_program.py
 ```
+
+```
+python variables_and_datatypes.py
+```
