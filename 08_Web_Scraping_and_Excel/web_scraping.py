@@ -9,15 +9,15 @@ response = requests.get(url)
 
 # Checking if the request was successful
 if response.status_code == 200:
-    # Parse the HTML content of the page
+    # Parsing the HTML content of the page
     soup = BeautifulSoup(response.content, "html.parser")
 
-    # Extract data - example: extracting all the headings
+    # Extracting the data - example: in this case, extracting all headings
     headings = soup.find_all("h1")
     for heading in headings:
         print(heading.text)
 
-    # Extract data - example: extracting all links
+    # Extracting the data - example: in this case, extracting all links
     links = soup.find_all("a")
     for link in links:
         print(link.get("href"))

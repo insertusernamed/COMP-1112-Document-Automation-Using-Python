@@ -1,9 +1,9 @@
 import os
 
-# Get the directory of the script
+# Getting the directory of the script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Change the current working directory to the script's directory
+# Changing the current working directory to the script's directory
 os.chdir(script_dir)
 
 # Writing strings to a file

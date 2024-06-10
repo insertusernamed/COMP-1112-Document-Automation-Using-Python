@@ -1,12 +1,12 @@
 import os
 
-# Get the directory of the script
+# Getting the directory of the script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Change the current working directory to the script's directory
+# Changing the current working directory to the script's directory
 os.chdir(script_dir)
 
-# Check if the file exists before attempting to open it
+# Checking if the file exists before attempting to open it
 file_path = "example.txt"
 if os.path.exists(file_path):
     with open(file_path, "r") as file:
